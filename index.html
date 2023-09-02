@@ -38,21 +38,48 @@
             <div class="bottom">
                 <nav class="menu">
                     <div class="left">
-                        <ul>
-                            <li ><a href="https://demo.mekshq.com/voice/?page_id=231">Home</a></li>
-                            <li ><a href="https://demo.mekshq.com/voice/?page_id=231">Layouts</a></li>
-                            <li ><a href="https://demo.mekshq.com/voice/?page_id=328">Typography</a></li>
-                            <li ><a href="https://demo.mekshq.com/voice/?page_id=294">Contact</a></li>
-                            <li ><a href="https://demo.mekshq.com/voice/?forum=forum">Forum</a></li>
-                            <li ><a href="https://demo.mekshq.com/voice/?product_cat=clothing">Shop</a></li>
+                        <ul class="main_navigation">
+                            <li class="main_menu">
+                                <a class="main_menu_text" href="">Home</a>
+                            </li>
+                            <li class="main_menu dropdown">
+                                <a class="main_menu_text dropdown-btn" href="">Layouts</a>
+                                <ul class="sub-menu">
+                                    <li><a class="submenu" href="">All In One Overview</a></li>
+                                    <li><a class="submenu" href="">Layout A</a></li>
+                                    <li><a class="submenu" href="">Layout B</a></li>
+                                    <li><a class="submenu" href="">Layout C</a></li>
+                                    <li><a class="submenu" href="">Layout D</a></li>
+                                </ul>
+                            </li>
+                            <li class="main_menu">
+                                <a lass="main_menu_text" href="">Typography</a>
+                            </li>
+                            <li class="main_menu">
+                                <a lass="main_menu_text" href="">Contact</a>
+                            </li>
+                            <li class="main_menu">
+                                <a lass="main_menu_text" href="">Forum</a>
+                            </li>
+                            <li class="main_menu dropdown">
+                                <a class="main_menu_text dropdown-btn" href="">Shop</a>
+                                <ul class="sub-menu">
+                                    <li><a class="submenu" href="">All In One Overview</a></li>
+                                    <li><a class="submenu" href="">Layout A</a></li>
+                                    <li><a class="submenu" href="">Layout B</a></li>
+                                    <li><a class="submenu" href="">Layout C</a></li>
+                                    <li><a class="submenu" href="">Layout D</a></li>
+                                </ul>
+                            
+                            </li>
                            
                         </ul>
                     </div>
                     <div class="searchbox">
                         <ul>
                             <li>
-                                <form class="vce-search-form" action="https://demo.mekshq.com/voice/" method="get">
-                                    <input name="s"  size="20" type="text" value="Type here to search..." onfocus="(this.value == 'Type here to search...') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Type here to search...')" placeholder="Type here to search...">
+                                <form class="search-form" action="" method="">
+                                    <input class="search-input" name="s"  size="20" type="text" value="" placeholder="Type here to search...">
                                     <button type="submit" >
                                         <i class="fa fa-search"></i>
                                     </button> 
@@ -63,6 +90,34 @@
                 </nav>
             </div>
         </header>
+
+        <slider>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="image1.jpg" alt="Image 1">
+                        <div class="caption">Caption 1</div>
+                    </div>
+                    <div class="slide">
+                        <img src="image2.jpg" alt="Image 2">
+                        <div class="caption">Caption 2</div>
+                    </div>
+                    <div class="slide">
+                        <img src="image3.jpg" alt="Image 3">
+                        <div class="caption">Caption 3</div>
+                    </div>
+                    <div class="slide">
+                        <img src="image4.jpg" alt="Image 4">
+                        <div class="caption">Caption 4</div>
+                    </div>
+                    <div class="slide">
+                        <img src="image5.jpg" alt="Image 5">
+                        <div class="caption">Caption 5</div>
+                    </div>
+                </div>
+            </div>
+            
+        </slider>
     </div>
 </body>
 
