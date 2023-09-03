@@ -532,7 +532,6 @@ img {
 /* middle */
 
 .middle-body {
-    padding: 5% 0;
 }
 
 .banner {
@@ -592,8 +591,9 @@ img {
 
 
 /* trending */
-.trending {    
-    padding: 0 15%;
+.trending {
+    padding: 0 10%;
+    margin-top: 50px;
 }
 .featured-posts, .highlights-posts, .editors-posts, .trending-posts, .popular-posts, .relate-posts, .recommend-posts {
     overflow: hidden;
@@ -607,7 +607,7 @@ img {
     padding-bottom: 21px;
 }
 .trending-posts .post {
-    border-bottom: 1px solid #e9e9e9;
+    /* border-bottom: 1px solid #e9e9e9; */
     padding-bottom: 17px;
     padding-top: 11px;
 }.trending-posts .post .thumb {
@@ -768,4 +768,10 @@ h5 {
 }
 .copyright-text {
     width: 100%;
+}
+.social-list i {
+    padding-top: 10px;
+}
+.logo {
+    font-size: 50px;
 }
