@@ -67,9 +67,9 @@ header .body {
     margin: 25px 0px;
 }
 
-header .menu{
+header .menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: baseline;
 }
 .bottom{
@@ -357,6 +357,16 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     padding: 0 10%;
     display: flex;
 }
+.search-input {
+    font-size: 14px;
+    padding: 10px 10px;
+    border: 1px solid #99999930;
+    border-radius: 5px;
+    width: 300px;
+}
+header .menu form {
+    margin: 0;
+}
 
 /* .right-side */
 
@@ -518,7 +528,8 @@ img {
 }
 
 .banner {
-    position: relative; 
+    position: relative;
+    box-shadow: 1px 1px 10px 1px #999;
 }
 
 .banner img {
@@ -553,12 +564,13 @@ img {
 .subscribe{
     display: inline-block;
     margin: 10px;
-    padding: 5px;
-    background-color: #ff0000; 
-    color: #ffffff; 
-    font-size: 16px; 
+    padding: 13px 40px;
+    background-color: #c80707;
+    box-shadow: 1px 1px 10px 1px #312c2c;
+    color: #ffffff;
+    font-size: 16px;
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
     cursor: pointer;
 }
 .subscribe:hover {
