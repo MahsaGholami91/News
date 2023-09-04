@@ -13,6 +13,62 @@
     <div class="main">
 
         <header>
+            <div class="mobile-container">
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <div>
+                        <a href="#home" class="active">V<span style="color:#c80707">N</span>EWS</a>
+                    </div>
+                
+                <!-- <button class="icon" onclick="myFunction()"> -->
+                    <i onclick="myFunction()" class="fa fa-bars"></i>
+                </div>
+            
+            <!-- End smartphone / tablet look -->
+            </div>
+
+            <div id="myLinks">
+                <ul class="main_navigation">
+                    <li class="main_menu">
+                        <a class="main_menu_text" href="">Home</a>
+                    </li>
+                    <li class="main_menu dropdown">
+                        <a class="main_menu_text dropdown-btn" href="">Layouts</a>
+                        <ul class="sub-menu">
+                            <li><a class="submenu" href="">All In One Overview</a></li>
+                            <li><a class="submenu" href="">Layout A</a></li>
+                            <li><a class="submenu" href="">Layout B</a></li>
+                            <li><a class="submenu" href="">Layout C</a></li>
+                            <li><a class="submenu" href="">Layout D</a></li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <a lass="main_menu_text" href="">Typography</a>
+                    </li>
+                    <li class="main_menu">
+                        <a lass="main_menu_text" href="">Contact</a>
+                    </li>
+                    <li class="main_menu">
+                        <a lass="main_menu_text" href="">Forum</a>
+                    </li>
+                    <li class="main_menu dropdown">
+                        <a class="main_menu_text dropdown-btn" href="">Shop</a>
+                        <ul class="sub-menu">
+                            <li><a class="submenu" href="">All In One Overview</a></li>
+                            <li><a class="submenu" href="">Layout A</a></li>
+                            <li><a class="submenu" href="">Layout B</a></li>
+                            <li><a class="submenu" href="">Layout C</a></li>
+                            <li><a class="submenu" href="">Layout D</a></li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+            </div>
+
+
+
             <div class="top-wide">
                 <nav class="top">
                     <div class="left">
@@ -39,11 +95,19 @@
             <div class="body">
                 <div class="logo">
                     V<span style="color:#c80707">N</span>EWS
-                                </div>
+                </div>
                 <div class="ads-banner">
                     <img src="image/voice_banner.png" alt="">
                 </div>
             </div>
+
+
+            <!-- Simulate a smartphone / tablet -->
+            
+
+            
+
+
             <div class="bottom">
                 <nav class="menu">
                     <div class="left">
@@ -556,7 +620,8 @@
                         <div class="contact-us" >
                             <div class="widget widget-brand">
                                 <div class="logo logo-footer">
-                                    <a href="#">                                        V<span style="color:#c80707">N</span>EWS</a>
+                                    <a href="#">                                        
+                                        V<span style="color:#c80707">N</span>EWS</a>
                                 </a>
                                 </div>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, doloribus.</p>
@@ -640,7 +705,7 @@
                     items: 1
                 },
                 600: {
-                    items: 3
+                    items: 1
                 },
                 1000: {
                     items: 3
@@ -667,5 +732,16 @@
             }
          );
 
+</script>
+
+<script>
+   function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
 </script>
 </html>
