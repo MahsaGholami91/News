@@ -146,6 +146,13 @@
       
         width: 100%;
     }
+    .popular-posts {
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+    .editors-posts {
+        padding: 0 20px;
+    }
     
 }
 
@@ -279,6 +286,13 @@
     .ads-banner {
         margin: 0 20px;
     }
+    .popular-posts {
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+    .editors-posts {
+        padding: 0 20px;
+    }
 }
 
 
@@ -411,6 +425,12 @@
     }
     .ads-banner {
         margin: 0 20px;
+    }
+    .popular-posts {
+        padding: 0 20px;
+    }
+    .editors-posts {
+        padding: 0 20px;
     }
 }
 
