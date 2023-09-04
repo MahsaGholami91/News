@@ -1,0 +1,21 @@
+#content-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 25px 0;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+}.flex-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-x1 {
+    width: 1073px;
+    max-width: 100%;
+}
+.container {
+    position: relative;
+}
