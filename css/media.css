@@ -1,4 +1,12 @@
 @media (max-width: 480px) {
+    .hidden {
+        display: block;
+    } 
+    .hidden-mobile {
+        display: none;
+    }
+
+
     .footer-content {
         display: flex;
         flex-direction: column;

@@ -13,23 +13,18 @@
     <div class="main">
 
         <header>
-            <div class="mobile-container">
-
-                <!-- Top Navigation Menu -->
+            <div class="mobile-container hidden">
                 <div class="topnav">
-                    <div>
-                        <a href="#home" class="active">V<span style="color:#c80707">N</span>EWS</a>
+                    <div class="logo-mobile">
+                        <a href="#home" >V<span style="color:#c80707">N</span>EWS</a>
                     </div>
-                
-                <!-- <button class="icon" onclick="myFunction()"> -->
                     <i onclick="myFunction()" class="fa fa-bars"></i>
                 </div>
-            
-            <!-- End smartphone / tablet look -->
             </div>
 
-            <div id="myLinks">
-                <ul class="main_navigation">
+            <div id="mobile-menu" class="mobile-menu">
+                <i class="fa fa-close" onclick="myFunction()"></i>
+                <ul>
                     <li class="main_menu">
                         <a class="main_menu_text" href="">Home</a>
                     </li>
@@ -66,10 +61,7 @@
 
                 </ul>
             </div>
-
-
-
-            <div class="top-wide">
+            <div class="top-wide hidden-mobile">
                 <nav class="top">
                     <div class="left">
                         <ul>
@@ -93,7 +85,7 @@
                 </nav>
             </div>
             <div class="body">
-                <div class="logo">
+                <div class="logo hidden-mobile">
                     V<span style="color:#c80707">N</span>EWS
                 </div>
                 <div class="ads-banner">
@@ -104,11 +96,7 @@
 
             <!-- Simulate a smartphone / tablet -->
             
-
-            
-
-
-            <div class="bottom">
+            <div class="bottom hidden-mobile">
                 <nav class="menu">
                     <div class="left">
                         <ul class="main_navigation">
@@ -736,11 +724,11 @@
 
 <script>
    function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    var menu = document.getElementById("mobile-menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
     } else {
-        x.style.display = "block";
+        menu.style.display = "block";
     }
 }
 </script>
