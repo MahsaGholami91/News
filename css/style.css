@@ -2102,3 +2102,16 @@ color: #69c9ff;
 .hover-yo:hover {
 color: red;
 }
+
+.news-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 88px;
+    margin-left: -2px;
+    width: 100%;
+    border-left: #4088c1 solid 4px;
+    height: 2em;
+}
+
