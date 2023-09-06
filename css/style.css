@@ -6,6 +6,10 @@ body {
 
 }
 
+a {
+    color: red;
+}
+
 header .top {
     display: flex;
     justify-content: space-between;
@@ -1319,7 +1323,6 @@ blockquote {
 
 .single-sidebar-widget {
     padding: 15px;
-    background: #d8d8d82e;
 }
 
 .single-sidebar-widget:last-child {
@@ -1505,12 +1508,17 @@ iframe {
 .social-list-n1 li a {
     border-left: none !important;
 }
+.social-list-n1 .d-flex {
+    justify-content: inherit !important;
+    width: 130px;
+}
 
 .title-n1 {
     color: red !important;
     background: none !important;
     font-weight: 300 !important;
     font-size: 24px;
+    margin-top: 10px;
 }
 
 .new-tabs-n1 {
@@ -1665,6 +1673,7 @@ a.post-label .label-name {
     display: flex;
     flex-direction: row;
     gap: 25px;
+    width: 100%;
 }
 
 .main-side-bottom .archive-n2 {
@@ -1962,12 +1971,14 @@ hr.n4-hr {
 
 .comment-box {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    padding: 25px 10%;
-    align-items: flex-start;
+    flex-direction: row;
     gap: 25px;
-    /* margin-top: 25px; */
+    margin-bottom: 25px;
+}
+
+.comment-box .box {
+    flex: 1; /* Each box will take up an equal amount of space */
+    padding: 20px;
 }
 
 .comments-layer.box-shadow {
@@ -1978,23 +1989,15 @@ hr.n4-hr {
 }
 
 form#contactForm {
-    background: #a9a9a914;
-    padding: 0px 50px 15px;
-    /* margin: 25px 0; */
     width: 90%;
 }
 
+
 /* Style the text input fields */
 
-/* input[type="text"],
-input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-} */
+.box .heading h3 {
+    color: red;
+}
 .input_txt {
     width: 100%;
     padding: 10px;
@@ -2049,8 +2052,6 @@ input[type="button"]:hover {
 
 .content.active.content-active-n4 {
     background: #a9a9a914;
-    padding: 0px 30px 8px;
-    margin-bottom: 5px;
 }
 
 .comments-layer h4 {
@@ -2103,4 +2104,14 @@ color: #69c9ff;
 .hover-yo:hover {
 color: red;
 }
+.p-15 {
+    padding: 15px;
+}
+.p-25 {
+    padding: 25px;
+}
+.px-10 {
+    padding: 0 10%;
+}
+
 
