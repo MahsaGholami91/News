@@ -1675,7 +1675,7 @@ a.post-label .label-name {
 }
 
 .main-side-bottom .content.active {
-    flex: 0 72%;
+    flex: 0 70%;
     background-color: #d8d8d82e;
     padding: 0 50px;
 }
@@ -1885,7 +1885,7 @@ a.post-label .label-name {
 }
 
 .main-side-bottom .archive-n4 {
-    flex: 0 20%;
+    flex: 0 30%;
     background-color: #d8d8d82e;
     text-align: center;
     line-height: 42px;
