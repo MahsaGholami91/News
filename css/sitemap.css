@@ -1,119 +1,86 @@
-.sitemap-navigation {
-  display: inline-block;
-  width: 110%;
-  max-width: 100%;
-  overflow: hidden;
-  padding: 0;
-}
-.sitemap-navigation ul,
-.sitemap-navigation li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-.sitemap-navigation a {
-  display: inline-block;
-}
-.sitemap-navigation .menu-item::before,
-.sitemap-navigation > .menu-item-has-children > .sub-menu::before {
-  content: "";
-  display: block;
-  position: relative;
-  left: 50%;
-  margin-left: -2px;
-  width: 100%;
-  border-left: #d6d6d6 solid 4px;
-  height: 2em;
-}
-.sitemap-navigation > .menu-item-has-children::before {
-  display: none;
-}
-.sitemap-navigation > .menu-item-has-children > .sub-menu {
-  display: flex;
-  border-top: #d6d6d6 solid 4px;
-  margin-top: 2em;
-  flex-direction: row;
-}
-.sitemap-navigation > .menu-item-has-children > .sub-menu::before {
-  position: absolute;
-  top: -2em;
-  margin-top: -4px;
-}
-.sitemap-navigation > .menu-item-has-children > .sub-menu > .menu-item {
-  flex: 1 0 auto;
-  margin-top: -4px;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.sitemap-navigation > .menu-item-has-children > .sub-menu > .menu-item:first-child::before, .sitemap-navigation > .menu-item-has-children > .sub-menu > .menu-item:last-child::before {
-  background: #fefeff;
-}
-.sitemap-navigation > .menu-item-has-children > .sub-menu > .menu-item:first-child::before {
-  left: auto;
-  right: 50%;
-  width: 100%;
-  border-left: none;
-  border-right: #d6d6d6 solid 4px;
-}
-
 body {
-  background: #fefeff;
+  font-family: Calibri, Segoe, "Segoe UI", "Gill Sans", "Gill Sans MT", sans-serif;
 }
 
-.sitemap-wrapper {
-  padding: 20px 10%;
+/* It's supposed to look like a tree diagram */
+.tree, .tree ul, .tree li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.tree {
+  margin: 35px auto;
   text-align: center;
+  width: 70%;
+  padding: 24px;
 }
-
-.sitemap-navigation a {
-  background: #366f68;
-  border-radius: 0.25em;
-  color: white;
-  text-decoration: none;
-  padding: 1em;
-  transition: 0.25s;
+.tree, .tree ul {
+    display: table;
 }
-.sitemap-navigation a:hover {
-  background: #04a4a2;
-}
-.sitemap-navigation > .menu-item-has-children > a {
-  background: #070707b8;
-  font-size: 1.2rem;
-}
-.sitemap-navigation > .menu-item-has-children > a:hover {
-  background: #1c1a1a69;
-}
-.sitemap-navigation > .menu-item-has-children > .sub-menu > .menu-item > a {
-  background: #ffca4a;
-  font-weight: 700;
-}
-.sitemap-navigation > .menu-item-has-children > .sub-menu > .menu-item > a:hover {
-  background: #ffca4a6e;
-}
-ul.sub-menu {
-  display: flex;
-  justify-content: space-around;
-  border-top: #d6d6d6 solid 4px;
-  margin-top: 2em;
-}
-
-ul.subsub {
-  display: flex;
-    border-top: #d6d6d6 solid 4px;
-    margin-top: 2em;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.news-link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 88px;
-  margin-left: -2px;
+.tree ul {
   width: 100%;
-  border-left: #d6d6d6 solid 4px;
-  height: 2em;
 }
+    .tree li {
+        display: table-cell;
+        padding: .5em 0;
+        vertical-align: top;
+    }
+        /* _________ */
+        .tree li:before {
+            outline: solid 1px #6666668a;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .tree li:first-child:before {left: 50%;}
+        .tree li:last-child:before {right: 50%;}
+
+        .tree code, .tree span {
+          border: solid 0.1em #66666605;
+          border-radius: 0.2em;
+          display: inline-block;
+          margin: 0 0.2em 0.5em;
+          padding: 0.2em 1.5em;
+          position: relative;
+          background: navajowhite;
+        }
+        .tree-2 span{
+          background: #ff149373;
+        }
+        .tree-3 span{
+          background: darkgray;;
+        }
+        .tree code {
+            font-family: monaco, Consolas, 'Lucida Console', monospace;
+        }
+
+            /* | */
+            .tree ul:before,
+            .tree code:before,
+            .tree span:before {
+                outline: solid 1px #6666668a;
+                content: "";
+                height: .5em;
+                left: 50%;
+                position: absolute;
+            }
+            .tree ul:before {
+                top: -.5em;
+            }
+            .tree code:before,
+            .tree span:before {
+                top: -.55em;
+            }
+
+/* The root node doesn't connect upwards */
+.tree > li {margin-top: 0;}
+    .tree > li:before,
+    .tree > li:after,
+    .tree > li > code:before,
+    .tree > li > span:before {
+      outline: none;
+    }
