@@ -5,7 +5,9 @@ body {
     color: #181818;
 
 }
-
+i.fa-brands.fa-facebook-f {
+    padding-right: 1px;
+}
 a {
     color: black;
 }
@@ -15,8 +17,8 @@ header .top {
     justify-content: space-between;
     align-items: center;
 }
-.topnav .v-color {
-    color:#c80707;
+ span.v-color {
+    color:#c80707 ;
 }
 .top-wide {
     background: linear-gradient(to bottom, #da463a, #c80707);
@@ -954,9 +956,7 @@ h5 {
     width: 100%;
 }
 
-.social-list i {
-    padding-top: 10px;
-}
+.social-list i {padding: 11px 0px;font-size: 20px;}
 
 .logo {
     font-size: 50px;
