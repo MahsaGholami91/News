@@ -11,10 +11,10 @@ body {
 }
 
 .tree {
-  margin: 35px auto;
+  margin: 38px auto;
   text-align: center;
   width: 70%;
-  padding: 24px;
+  padding: 40px;
 }
 .tree, .tree ul {
     display: table;
@@ -24,7 +24,7 @@ body {
 }
     .tree li {
         display: table-cell;
-        padding: .5em 0;
+        padding: 0.6em 0;
         vertical-align: top;
     }
         /* _________ */
@@ -44,7 +44,7 @@ body {
           border-radius: 0.2em;
           display: inline-block;
           margin: 0 0.2em 0.5em;
-          padding: 0.2em 1.5em;
+          padding: 0.7em 2.0em;
           position: relative;
           background: navajowhite;
         }
