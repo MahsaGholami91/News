@@ -52,7 +52,7 @@ nav a {
 
 header .social ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
     display: flex;
 }
@@ -62,16 +62,18 @@ header .social ul li {
     margin: 5px 10px;
     border: 1px solid #fff6;
     width: 25px;
-    height: 25px;
+    height: 23px;
     text-align: center;
 }
 
 header .social ul li a {
     color: #f0e7e7;
+    text-align: -webkit-right;
 }
 
 header .social i {
-    vertical-align: inherit;
+    /* vertical-align: inherit; */
+    text-align: -webkit-center;
 }
 
 header .body {
@@ -303,7 +305,7 @@ a {
 
 .popular-posts .content-left h3 {
     line-height: 30px;
-    margin: 0 0 3px;
+    margin: 20px 0 3px;
 }
 
 .editors-posts .cat a,
@@ -529,13 +531,11 @@ header .menu form {
 }
 
 .tabs .comments .avatar {
-    margin-right: 17px;
+    flex: 0 20%;
+    margin: 10px;
 }
 
-.tabs .comments .avatar img {
-
-    border-radius: 50%;
-}
+.tabs .comments .avatar img {border-radius: 50%;}
 
 img {
     height: auto;
@@ -553,6 +553,7 @@ img {
     color: #b7b7b7;
     padding-top: 8px;
     margin: 0;
+    flex: 1;
 }
 
 .tabs .comments p a,
@@ -661,7 +662,7 @@ img {
 
 .middle-text {
     position: absolute;
-    bottom: 40;
+    bottom: 100px;
     left: 400px;
     color: #fff;
     display: flex;
@@ -810,7 +811,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: start;
 }
 
 footer .contact-us {
@@ -878,7 +879,6 @@ h5 {
 .footer-widgets .widget-social .social-list img {
     filter: alpha(opacity=40);
     opacity: 0.4;
-
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -909,6 +909,16 @@ h5 {
 .about-us {
     width: 10.66666667%;
 
+}
+
+.footer-widgets .widget-social .social-list .facebook:hover {
+    color: blue;
+}
+.footer-widgets .widget-social .social-list .twitter:hover {
+    color: deepskyblue;
+}
+.footer-widgets .widget-social .social-list .youtube:hover {
+    color: red;
 }
 
 .footer-widgets .widget-list li a:hover {
@@ -1038,6 +1048,7 @@ ul.cat-list {
 .editors-posts .post .content,
 .relate-posts .post .content {
     overflow: hidden;
+    flex: 1;
 }
 
 .editors-posts .cat,
